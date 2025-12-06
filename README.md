@@ -1,6 +1,6 @@
 ## QuickBench 
 
-![Build Status](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/actions/workflows/python-app.yml/badge.svg)
+![Build Status](https://github.com/ankitdutta428/QuickBench/actions/workflows/python-app.yml/badge.svg)
 ![Python Version](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
