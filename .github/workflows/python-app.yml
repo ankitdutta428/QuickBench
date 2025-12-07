@@ -33,3 +33,4 @@ jobs:
       run: |
         # Runs your specific test file
         python tests/test_timer.py
+        python tests/test_ml_benchmark.py
