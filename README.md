@@ -18,7 +18,7 @@ A lightweight, zero-dependency Python utility for timing code execution. QuickBe
 
 
 ```bash
-pip install quickbench
+pip install QuickBench
 ```
 
 Usage
