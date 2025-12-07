@@ -7,6 +7,17 @@
 
 A lightweight, zero-dependency Python utility for timing code execution. QuickBench provides both a **decorator** and a **context manager** which can easily measure how long functions or code blocks take to run.
 
+**QuickBench** is the all-in-one performance toolkit for Python developers. Whether you are optimizing a `for` loop, comparing Machine Learning models, or evaluating LLM latency, QuickBench handles the metrics so you can focus on the code.
+
+## Why QuickBench?
+
+* **Universal Timer:** Benchmark functions or blocks of code with a simple decorator.
+* **ML Benchmarking:** Automatically compare `sklearn`, `xgboost`, etc. (Accuracy, F1, RMSE).
+* **LLM Benchmarking:** Measure Token/sec and Latency for GPT, Llama, or Claude wrappers.
+* **pandas Output:** All results return clean DataFrames ready for analysis.
+
+---
+
 ## Features
 
 - **Decorator Support:** Time entire functions with a single line (`@monitor`).
