@@ -1,0 +1,57 @@
+name: Publish to PyPI
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  # JOB 1: RUN TESTS FIRST
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.9"
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install scikit-learn pandas numpy pytest
+        pip install -e .
+    - name: Run Test Suite
+      run: |
+        python tests/test_timer.py
+        python tests/test_ml_benchmark.py
+
+  # JOB 2: PUBLISH (Only runs if 'test' passes)
+  pypi-publish:
+    name: Upload release to PyPI
+    needs: test  # <--- THIS IS THE SAFETY LOCK
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.9"
+
+    - name: Install Build Tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install build
+
+    - name: Build Package
+      run: |
+        python -m build
+
+    - name: Publish to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        password: ${{ secrets.PYPI_API_TOKEN }}

@@ -25,11 +25,13 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        # FORCE install the data science libraries
+        pip install pandas scikit-learn numpy pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        # Install the package itself in editable mode so imports work
         pip install -e .
 
     - name: Run Tests
       run: |
         # Runs your specific test file
         python tests/test_timer.py
+        python tests/test_ml_benchmark.py

@@ -4,10 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "QuickBench"  
-version = "0.0.11"
-description = "A lightweight utility to time python functions and blocks."
+version = "0.0.121"
+description = "A lightweight python package to time python functions and blocks, and bench machine learning models"
 readme = "README.md"
 requires-python = ">=3.7"
 authors = [
-  {name = "Ankit Dutta", email = "masterankit150@gmail.com"}
+  {name = "Minerva AI", email = "services.ai.minerva@gmail.com"}
 ]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["QuickBench*"] 
+exclude = ["assets*", "tests*"]
