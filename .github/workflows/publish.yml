@@ -23,7 +23,7 @@ jobs:
     - name: Run Test Suite
       run: |
         python tests/test_timer.py
-        python tests/test_benchmark.py
+        python tests/test_ml_benchmark.py
 
   # JOB 2: PUBLISH (Only runs if 'test' passes)
   pypi-publish:
