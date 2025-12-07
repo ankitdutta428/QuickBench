@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 
-A lightweight, zero-dependency Python utility for timing code execution. QuickBench provides both a **decorator** and a **context manager** to easily measure how long functions or code blocks take to run.
+A lightweight, zero-dependency Python utility for timing code execution. QuickBench provides both a **decorator** and a **context manager** which can easily measure how long functions or code blocks take to run.
 
 ## Features
 
