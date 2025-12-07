@@ -125,6 +125,6 @@ We would absolutely love your contribution, since that is what makes us keep goi
 #### Source Code: [GitHub Repository](https://github.com/ankitdutta428/QuickBench)
 
 ## Branding
-QuickBench is proudly developed and maintained by Minerva AI under the able leadership of Ankit Dutta. Empowering developers with wisdom and speed.
+QuickBench is proudly developed and maintained by Minerva AI. Empowering developers with wisdom and speed.
 
 
