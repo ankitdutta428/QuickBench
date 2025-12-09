@@ -1,7 +1,7 @@
 # QuickBench
 
 <div align="center">
-  <img src="assets/logo.png" alt="QuickBench Logo" width="300">
+  <img src="https://raw.githubusercontent.com/ankitdutta428/QuickBench/main/assets/logo.png" alt="QuickBench Logo" width="350">
   <br>
 </div>
 
